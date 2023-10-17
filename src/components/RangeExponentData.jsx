@@ -14,8 +14,8 @@ const RangeExponentData = () => {
       }
       r.push(output);
     }
-  }
-  console.log(data);
+}
+console.log(start);
   const handleSubmit = (e) => {
     setData(r);
     e.preventDefault();
@@ -26,7 +26,7 @@ const RangeExponentData = () => {
       <section className=" h-screen bg-[#10111A]">
         <div className="container mx-auto h-full flex justify-center flex-col items-center">
           <form onSubmit={handleSubmit}>
-            <div className="flex flex-col justify-center rounded-md border bg-white/5 backdrop-blur-md  gap-5 px-20 py-10">
+            <div className="flex flex-col justify-center rounded-md border max-w-[600px] bg-white/5 backdrop-blur-md  gap-5 px-20 py-10">
               <div className="flex gap-2">
                 <input
                   type="text"
@@ -57,7 +57,7 @@ const RangeExponentData = () => {
               >
                 Output
               </button>
-              <div className="mt-5">
+              <div className="mt-5 flex  flex-wrap">
                 {data.map((obj, i) => {
                   return (
                     <span className="text-white text-2xl" key={i}>
