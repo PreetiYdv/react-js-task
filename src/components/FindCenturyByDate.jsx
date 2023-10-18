@@ -22,7 +22,6 @@ const FindCenturyByDate = () => {
               type="number"
               value={year}
               placeholder="year"
-              max={4}
               onChange={(e) => setYear(e.target.value)}
               className="p-1 me-5"
             />
