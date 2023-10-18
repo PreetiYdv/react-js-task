@@ -11,6 +11,7 @@ const FindCenturyByDate = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     FindcenturyByYear(year);
+    setYear('')
   };
   return (
     <>
