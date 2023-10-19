@@ -7,9 +7,7 @@ const SumFuncWithCondition = () => {
   const [array, setArray] = useState([]);
   function SumFunc(array, remove) {
     let sum = 0;
-        console.log(remove);
     for (let i = 0; i < array.length; i++) {
-     
       if (array[i] !== remove) {
         sum += array[i];
       }
@@ -22,8 +20,7 @@ const SumFuncWithCondition = () => {
     };
   const handleSubmit = (e) => {
     e.preventDefault();
-    SumFunc(array, remove);
-    // console.log(remove);
+    SumFunc(array, Number(remove));
     setArray('')
   };
   return (
@@ -32,7 +29,7 @@ const SumFuncWithCondition = () => {
         <div className="container mx-auto h-full flex justify-center flex-col items-center">
           <form onSubmit={handleSubmit} className="">
             <h2 className="text-white text-3xl mb-4 text-center font-semibold">
-              Sum of array{array+","} number except {remove}
+              Sum of array {array+","} number except {remove}
             </h2>
             <input
               type="number"

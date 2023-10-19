@@ -15,11 +15,11 @@ export const ContentData = [
     title: "series-function",
     link: "/series-function",
   },
-//   {
-//     title: "sum-function-with-condition",
-//     link: "/sum-function-with-condition",
-//   },
   {
+    title: "sum-function-with-condition",
+    link: "/sum-function-with-condition",
+  },
+  {   
     title: "find-century-by-date",
     link: "/find-century-by-date",
   },
