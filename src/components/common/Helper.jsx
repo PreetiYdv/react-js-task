@@ -19,8 +19,12 @@ export const ContentData = [
     title: "sum-function-with-condition",
     link: "/sum-function-with-condition",
   },
-  {   
-    title: "find-century-by-date",
+  {
+    title: "find century by date",
     link: "/find-century-by-date",
+  },
+  {
+    title: "find vowel",
+    link: "/find-vowels",
   },
 ];

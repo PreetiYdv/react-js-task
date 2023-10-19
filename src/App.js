@@ -7,6 +7,7 @@ import RangeExponentData from "./components/RangeExponentData";
 import SeriesFunction from "./components/SeriesFunction";
 import SumFuncWithCondition from "./components/SumFuncWithCondition";
 import FindCenturyByDate from "./components/FindCenturyByDate";
+import FindVowel from "./components/FindVowel";
 
 function App() {
   const Data = [1, 2, 3, 4, 5];
@@ -29,6 +30,7 @@ function App() {
           path="/find-century-by-date"
           element={<FindCenturyByDate />}
         ></Route>
+        <Route path="/find-vowels" element={<FindVowel />}></Route>
       </Routes>
     </div>
   );

@@ -40,7 +40,7 @@ const FindCenturyByDate = () => {
             >
               output
             </button>
-            <p className="text-white mt-4 text-lg text-center">{output}</p>
+            <p className="text-white mt-4 text-lg text-center">Output :- {output}</p>
           </form>
         </div>
       </div>

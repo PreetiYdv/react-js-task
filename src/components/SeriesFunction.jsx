@@ -5,7 +5,7 @@ const SeriesFunction = () => {
   const [output, setOutput] = useState(0);
   function seriesPattern(number) {
     let result = 1;
-    for (let i = 1; i <= number; i++) {
+    for (let i = 0; i <= number; i++) {
       let output = i * 4;
       result += output;
     }

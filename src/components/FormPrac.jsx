@@ -11,6 +11,13 @@ const FormPrac = () => {
   const handleSubmit = (e) => {
     console.log(formData, "formData");
     e.preventDefault();
+    setFormData({
+      FirstName: "",
+      lastName: "",
+      contact: "",
+      gender: "",
+      course: "",
+    });
   };
   return (
     <>
