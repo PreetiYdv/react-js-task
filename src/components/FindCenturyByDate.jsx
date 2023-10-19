@@ -4,8 +4,16 @@ const FindCenturyByDate = () => {
   const [year, setYear] = useState("");
   const [output, setOutput] = useState("");
   function FindcenturyByYear(year) {
-    const inputYear = year.slice(0, -2);
-    let century = Number(inputYear) + 1 + "th Century";
+    let century = ""
+    if (year <= 100) {
+      century = 1 + "th Century";
+    }
+   else if (year % 100 === 0) {
+       century = year/100 + "th Century";
+    }
+    else {
+      century = Math.floor(year / 100) + 1 + "th Century";
+    }
     setOutput(century);
   }
   const handleSubmit = (e) => {
