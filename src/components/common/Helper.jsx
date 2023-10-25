@@ -27,4 +27,12 @@ export const ContentData = [
     title: "find vowel",
     link: "/find-vowels",
   },
+  {
+    title: "Include method",
+    link: "/include-method",
+  },
+  {
+    title: "filter method",
+    link: "/filter-method",
+  },
 ];

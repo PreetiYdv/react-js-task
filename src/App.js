@@ -8,6 +8,8 @@ import SeriesFunction from "./components/SeriesFunction";
 import SumFuncWithCondition from "./components/SumFuncWithCondition";
 import FindCenturyByDate from "./components/FindCenturyByDate";
 import FindVowel from "./components/FindVowel";
+import IncludeMethod from "./components/IncludeMethod";
+import FilterMethod from './components/FilterMethod';
 
 function App() {
   const Data = [1, 2, 3, 4, 5];
@@ -31,6 +33,8 @@ function App() {
           element={<FindCenturyByDate />}
         ></Route>
         <Route path="/find-vowels" element={<FindVowel />}></Route>
+        <Route path="/include-method" element={<IncludeMethod />}></Route>
+        <Route path="/filter-method" element={<FilterMethod />}></Route>
       </Routes>
     </div>
   );
