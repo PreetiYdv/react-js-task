@@ -10,6 +10,7 @@ import FindCenturyByDate from "./components/FindCenturyByDate";
 import FindVowel from "./components/FindVowel";
 import IncludeMethod from "./components/IncludeMethod";
 import FilterMethod from './components/FilterMethod';
+import ArrayMethods from "./components/ArrayMethods";
 
 function App() {
   const Data = [1, 2, 3, 4, 5];
@@ -35,6 +36,7 @@ function App() {
         <Route path="/find-vowels" element={<FindVowel />}></Route>
         <Route path="/include-method" element={<IncludeMethod />}></Route>
         <Route path="/filter-method" element={<FilterMethod />}></Route>
+        <Route path="/array-method" element={<ArrayMethods />}></Route>
       </Routes>
     </div>
   );

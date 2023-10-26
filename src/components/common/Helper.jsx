@@ -35,4 +35,8 @@ export const ContentData = [
     title: "filter method",
     link: "/filter-method",
   },
+  {
+    title: "Array method",
+    link: "/array-method",
+  },
 ];
