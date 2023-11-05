@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router";
+import { Routes, Route, useNavigate } from "react-router";
 import "./App.css";
 import First from "./components/First";
 import FormPrac from "./components/FormPrac";
@@ -11,11 +11,32 @@ import FindVowel from "./components/FindVowel";
 import IncludeMethod from "./components/IncludeMethod";
 import FilterMethod from './components/FilterMethod';
 import ArrayMethods from "./components/ArrayMethods";
+import LocalStoragePrac from "./components/LocalStoragePrac";
+import ToDo from './components/ToDo';
 
 function App() {
   const Data = [1, 2, 3, 4, 5];
+  const navigate = useNavigate()
+  const handleLogOut =()=>{
+    localStorage.removeItem("isLogin" ,false);
+    // localStorage.setItem("isLogin", "false");
+  }
+  const handleLogin =()=>{
+    navigate('/local-storage')
+    // localStorage.setItem("isLogin", "false");
+  }
   return (
-    <div className="">
+    <>
+        {/* <div className="flex gap-5 bg-black">
+          {localStorage.getItem("isLogin") ? 
+          <button onClick={handleLogOut} 
+          className="border py-1 px-4 text-lg text-white hover:bg-white hover:text-black transition-all duration-300 rounded-xl"
+          >Log Out</button>
+            : <button onClick={handleLogin} 
+            className="border py-1 px-4 text-lg text-white hover:bg-white hover:text-black transition-all duration-300 rounded-xl">
+              Log in</button>
+          }
+        </div>  */}
       <Routes>
         <Route path="/" element={<Content />}></Route>
         <Route path="/first" element={<First data={Data} />}></Route>
@@ -37,8 +58,10 @@ function App() {
         <Route path="/include-method" element={<IncludeMethod />}></Route>
         <Route path="/filter-method" element={<FilterMethod />}></Route>
         <Route path="/array-method" element={<ArrayMethods />}></Route>
+        <Route path="/local-storage" element={<LocalStoragePrac />}></Route>
+        <Route path="/to-do" element={<ToDo />}></Route>
       </Routes>
-    </div>
+    </>
   );
 }
 

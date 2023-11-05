@@ -39,4 +39,12 @@ export const ContentData = [
     title: "Array method",
     link: "/array-method",
   },
+  {
+    title: "Local storage practice",
+    link: "/local-storage",
+  },
+  {
+    title: "To Do",
+    link: "/to-do",
+  },
 ];
