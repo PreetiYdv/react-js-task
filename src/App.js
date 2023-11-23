@@ -13,6 +13,8 @@ import FilterMethod from './components/FilterMethod';
 import ArrayMethods from "./components/ArrayMethods";
 import LocalStoragePrac from "./components/LocalStoragePrac";
 import ToDo from './components/ToDo';
+import SelectFilter from './components/SelectFilter';
+import HoverEffcet from "./components/HoverEffcet";
 
 function App() {
   const Data = [1, 2, 3, 4, 5];
@@ -60,6 +62,9 @@ function App() {
         <Route path="/array-method" element={<ArrayMethods />}></Route>
         <Route path="/local-storage" element={<LocalStoragePrac />}></Route>
         <Route path="/to-do" element={<ToDo />}></Route>
+        <Route path="/select-filter" element={<SelectFilter />}></Route>
+        <Route path="/hover-effect" element={<HoverEffcet />}></Route>
+        
       </Routes>
     </>
   );
