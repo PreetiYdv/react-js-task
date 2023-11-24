@@ -15,6 +15,7 @@ import LocalStoragePrac from "./components/LocalStoragePrac";
 import ToDo from './components/ToDo';
 import SelectFilter from './components/SelectFilter';
 import HoverEffcet from "./components/HoverEffcet";
+import StarProgress from './components/StarProgress';
 
 function App() {
   const Data = [1, 2, 3, 4, 5];
@@ -64,6 +65,7 @@ function App() {
         <Route path="/to-do" element={<ToDo />}></Route>
         <Route path="/select-filter" element={<SelectFilter />}></Route>
         <Route path="/hover-effect" element={<HoverEffcet />}></Route>
+        <Route path="/star-progress" element={<StarProgress />}></Route>
         
       </Routes>
     </>

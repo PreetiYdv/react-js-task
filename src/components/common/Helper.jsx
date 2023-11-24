@@ -51,6 +51,10 @@ export const ContentData = [
     title: "Card hover",
     link: "/hover-effect",
   },
+  {
+    title: "Star Progress",
+    link: "/star-progress",
+  },
 ];
 
 export const searchFilterData=[
