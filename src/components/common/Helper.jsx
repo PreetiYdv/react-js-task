@@ -35,10 +35,10 @@ export const ContentData = [
     title: "fiter and splice method",
     link: "/fiter-splice-method",
   },
-  // {
-  //   title: "filter method",
-  //   link: "/filter-method",
-  // },
+  {
+    title: "filter method",
+    link: "/filter-method",
+  },
   // {
   //   title: "Array method",
   //   link: "/array-method",
@@ -51,14 +51,14 @@ export const ContentData = [
     title: "To Do",
     link: "/to-do",
   },
-  {
-    title: "Card hover",
-    link: "/hover-effect",
-  },
-  {
-    title: "Star Progress",
-    link: "/star-progress",
-  },
+  // {
+  //   title: "Card hover",
+  //   link: "/hover-effect",
+  // },
+  // {
+  //   title: "Star Progress",
+  //   link: "/star-progress",
+  // },
   {
     title: "Api Fetching",
     link: "/api-fetching",

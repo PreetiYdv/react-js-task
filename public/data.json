@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "name":"Archana",
+            "age": "21"
+            },
+            {
+           "name":"Shelly",
+           "age": "25"
+           },
+           {
+          "name":"Preeti",
+          "age": "19"
+          }
+      
+    ]
+  }

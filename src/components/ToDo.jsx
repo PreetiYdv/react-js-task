@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ToDo = () => {
+const ToDo = ({text}) => {
   const [newArray, setNewArray] = useState([]);
   const [updateIndex,setUpdateIndex]=useState()
   const [formData, setFormData] = useState({
@@ -46,6 +46,7 @@ const ToDo = () => {
   return (
     <>
       <section className=" h-screen flex justify-center flex-col items-center bg-[#10111A]">
+        <p className="text-white">{text } </p>
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col justify-center rounded-md border bg-white/5 backdrop-blur-md  gap-5 px-20 py-10">
             <div className="flex gap-5">

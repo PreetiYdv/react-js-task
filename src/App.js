@@ -62,10 +62,10 @@ function App() {
         <Route path="/find-vowels" element={<FindVowel />}></Route>
         <Route path="/include-method" element={<IncludeMethod />}></Route>
         <Route path="/fiter-splice-method" element={<FilterAndSpliceMethod />}></Route>
-        <Route path="/filter-method" element={<FilterMethod />}></Route>
+        <Route path="/filter-method" element={<FilterMethod text="preeti" type="text" />}></Route>
         <Route path="/array-method" element={<ArrayMethods />}></Route>
         <Route path="/local-storage" element={<LocalStoragePrac />}></Route>
-        <Route path="/to-do" element={<ToDo />}></Route>
+        <Route path="/to-do" element={<ToDo text="text" />}></Route>
         <Route path="/select-filter" element={<SelectFilter />}></Route>
         <Route path="/hover-effect" element={<HoverEffcet />}></Route>
         <Route path="/star-progress" element={<StarProgress />}></Route>

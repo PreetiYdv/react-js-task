@@ -1,21 +1,34 @@
-import React, { useEffect, useState } from 'react'
-
+import React, { useState, useEffect } from 'react';
 const ApiFetching = () => {
-    let [dogImage, setDogImage] = useState(null)
-
+    const [jsonData, setJsonData] = useState(null);
     useEffect(() => {
-        fetch("https://dog.ceo/api/breeds/image/random/21")
-            .then(response => response.json())
-            .then(data => setDogImage(data.message)
-            )
-        console.log('data')
-    }, [])
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/data.json');
+                const data = await response.json();
+                console.log(data,"data")
+                setJsonData(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []); // Empty dependency array ensures the effect runs once when the component mounts
+
     return (
         <>
-            <div className="flex flex-wrap">
-                {dogImage && dogImage?.map((dog) => <img width={"200px"} height={"200px"} src={dog} alt="dog_image" />)}
-
-            </div>
+            {jsonData ? (
+                <ul>
+                    {jsonData?.data?.map((item, index) => (
+                        <li key={index}>
+                            {item.name} - {item.age} years old
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p>Loading data...</p>
+            )}
         </>
     )
 }

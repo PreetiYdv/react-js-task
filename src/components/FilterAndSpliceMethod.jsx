@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const FilterAndSpliceMethod = () => {
     const [data, setdata] = useState([{ email: 'palvi@gmail.com' }, { email: 'preeti@gmail.com' }])
-    const [value, setValue] = useState("");
+    const [value, setValue] = useState([{}]);
     const [message, setMessage] = useState('');
 
     const handleSubmit = (item) => {
@@ -35,7 +35,7 @@ const FilterAndSpliceMethod = () => {
             <section className="h-screen bg-[#10111A]">
                 <div className="container mx-auto h-full flex justify-center flex-col items-center">
                     <h2 className="text-white text-3xl mb-4 text-center font-semibold">
-                        Filter Method
+                        Filter Method 
                     </h2>
                     <div className="flex flex-col justify-center rounded-md border bg-white/5 backdrop-blur-md gap-5 px-20 py-10">
                         <form onSubmit={submitHandler} className='flex justify-center items-center'>
