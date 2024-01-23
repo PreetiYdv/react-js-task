@@ -16,21 +16,23 @@ import ToDo from './components/ToDo';
 import SelectFilter from './components/SelectFilter';
 import HoverEffcet from "./components/HoverEffcet";
 import StarProgress from './components/StarProgress';
+import ApiFetching from "./components/ApiFetching";
+import FilterAndSpliceMethod from "./components/FilterAndSpliceMethod";
 
 function App() {
   const Data = [1, 2, 3, 4, 5];
   const navigate = useNavigate()
-  const handleLogOut =()=>{
-    localStorage.removeItem("isLogin" ,false);
+  const handleLogOut = () => {
+    localStorage.removeItem("isLogin", false);
     // localStorage.setItem("isLogin", "false");
   }
-  const handleLogin =()=>{
+  const handleLogin = () => {
     navigate('/local-storage')
     // localStorage.setItem("isLogin", "false");
   }
   return (
     <>
-        {/* <div className="flex gap-5 bg-black">
+      {/* <div className="flex gap-5 bg-black">
           {localStorage.getItem("isLogin") ? 
           <button onClick={handleLogOut} 
           className="border py-1 px-4 text-lg text-white hover:bg-white hover:text-black transition-all duration-300 rounded-xl"
@@ -59,6 +61,7 @@ function App() {
         ></Route>
         <Route path="/find-vowels" element={<FindVowel />}></Route>
         <Route path="/include-method" element={<IncludeMethod />}></Route>
+        <Route path="/fiter-splice-method" element={<FilterAndSpliceMethod />}></Route>
         <Route path="/filter-method" element={<FilterMethod />}></Route>
         <Route path="/array-method" element={<ArrayMethods />}></Route>
         <Route path="/local-storage" element={<LocalStoragePrac />}></Route>
@@ -66,7 +69,8 @@ function App() {
         <Route path="/select-filter" element={<SelectFilter />}></Route>
         <Route path="/hover-effect" element={<HoverEffcet />}></Route>
         <Route path="/star-progress" element={<StarProgress />}></Route>
-        
+        <Route path="/api-fetching" element={<ApiFetching />}></Route>
+
       </Routes>
     </>
   );

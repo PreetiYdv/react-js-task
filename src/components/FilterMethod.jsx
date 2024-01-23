@@ -6,7 +6,9 @@ const FilterMethod = () => {
     const [message, setMessage] = useState('');
 
     const handleSubmit = (item) => {
+        console.log(item)
         const result = data.filter((obj, i) => {
+            console.log(obj.num,"obj.numobj.num")
             return obj.num === item ? obj.num : ""
         })
         console.log(result);

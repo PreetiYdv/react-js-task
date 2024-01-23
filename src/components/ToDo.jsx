@@ -21,6 +21,7 @@ const ToDo = () => {
     // ========= update data ==============
     if (updateIndex !== undefined) {
       const updatedData = [...newArray];
+      console.log(updatedData,"jnjnjnj");
       updatedData[updateIndex] = { ...formData };
       setNewArray(updatedData);
       setUpdateIndex(undefined); // Reset updateIndex after updating
@@ -56,6 +57,7 @@ const ToDo = () => {
                 onChange={(e) => {
                   setFormData({ ...formData, FirstName: e.target.value });
                 }}
+                required
               />
               <input
                 className="py-1 px-2 bg-transparent text-white border-b outline-none"
@@ -65,6 +67,7 @@ const ToDo = () => {
                 onChange={(e) => {
                   setFormData({ ...formData, lastName: e.target.value });
                 }}
+                required
               />
             </div>
             <div className="flex gap-5">
@@ -76,6 +79,7 @@ const ToDo = () => {
                 onChange={(e) => {
                   setFormData({ ...formData, contact: e.target.value });
                 }}
+                required
               />
               <input
                 className="py-1 px-2 bg-transparent text-white border-b outline-none appearance-none"
@@ -85,6 +89,7 @@ const ToDo = () => {
                 onChange={(e) => {
                   setFormData({ ...formData, email: e.target.value });
                 }}
+                required 
               />
             </div>
             <button

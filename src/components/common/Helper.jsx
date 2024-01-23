@@ -27,22 +27,26 @@ export const ContentData = [
   //   title: "find vowel",
   //   link: "/find-vowels",
   // },
+  {
+    title: "Include method",
+    link: "/include-method",
+  },
+  {
+    title: "fiter and splice method",
+    link: "/fiter-splice-method",
+  },
   // {
-  //   title: "Include method",
-  //   link: "/include-method",
+  //   title: "filter method",
+  //   link: "/filter-method",
   // },
-  {
-    title: "filter method",
-    link: "/filter-method",
-  },
-  {
-    title: "Array method",
-    link: "/array-method",
-  },
-  {
-    title: "Local storage practice",
-    link: "/local-storage",
-  },
+  // {
+  //   title: "Array method",
+  //   link: "/array-method",
+  // },
+  // {
+  //   title: "Local storage practice",
+  //   link: "/local-storage",
+  // },
   {
     title: "To Do",
     link: "/to-do",
@@ -54,6 +58,10 @@ export const ContentData = [
   {
     title: "Star Progress",
     link: "/star-progress",
+  },
+  {
+    title: "Api Fetching",
+    link: "/api-fetching",
   },
 ];
 
